@@ -110,8 +110,8 @@
     </tr>
     {% for user in users %}
         <tr>
-            <td>{{ user['data'] }}</td>
-            <td><button onclick="deleteUser({{ user['id'] }})">Delete</button></td>
+            <td>{{ user.getData() }}</td>
+            <td><button onclick="deleteUser({{ user.getId() }})">Delete</button></td>
         </tr>
     {% endfor %}
 </table>
